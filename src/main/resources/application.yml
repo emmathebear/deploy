@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+---
+environment: integration
+CustomVarTree:
+  devName: try
+server:
+  port: 7070
