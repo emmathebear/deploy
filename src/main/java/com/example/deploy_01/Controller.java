@@ -14,12 +14,9 @@ public class Controller {
     @Autowired
     private Environment environment;
 
-    @Value("${CustomVarTree.devName}")
-    String myDevName;
-
     @GetMapping
     public String loadProperty() {
-        return myDevName;
+        return environment.getProperty("customVarTree.devName");
     }
 
 
